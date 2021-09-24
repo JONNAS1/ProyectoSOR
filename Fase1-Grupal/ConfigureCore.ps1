@@ -11,5 +11,5 @@ New-NetIPAddress -InterfaceIndex 4 -IPaddress 192.168.1.202 -PrefixLength 24 -De
 #Le configuramos el DNS
 Set-DnsClientServerAddress -InterfaceIndex 4 -ServerAddresses 192.168.1.201, 192.168.1.202
 
-#Obtenemos la informacion del disco
+#Para ver la version del NTFS
 fsutil fsinfo ntfsinfo C:\
