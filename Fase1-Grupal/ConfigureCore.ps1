@@ -13,3 +13,15 @@ Set-DnsClientServerAddress -InterfaceIndex 4 -ServerAddresses 192.168.1.201, 192
 
 #Oscar: Para ver la version del NTFS
 fsutil fsinfo ntfsinfo C:\
+
+#Oscar: Ver de que servidor obtiene la hora nuestro windows
+W32tm /query /configuration
+
+#Oscar: Establecemos un servidor personalizado del que obtener la hora
+w32tm /config /manualpeerlist:"0.es.pool.ntp.org time.google.com" /syncfromflags:manual /update
+
+#Oscar: Comprobar que se han establecido los dos servidores correctamente
+W32tm /query /configuration
+
+#Oscar: Comprobar que la fecha se ha establecido correctamente
+get-date
