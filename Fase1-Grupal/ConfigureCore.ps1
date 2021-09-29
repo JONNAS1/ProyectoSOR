@@ -25,3 +25,12 @@ W32tm /query /configuration
 
 #Oscar: Comprobar que la fecha se ha establecido correctamente
 get-date
+
+#Oscar: Para ver las particiones que ha creado Windows ejecutamso los siguientes comandos
+#Oscar: entramos a diskpart
+diskpart
+#Oscar: Listamos los discos y seleccionamos el deseado
+disk list
+select disk 0
+#Oscar: Para ver las particiones
+list partition
