@@ -30,7 +30,7 @@ get-date
 #Oscar: entramos a diskpart
 diskpart
 #Oscar: Listamos los discos y seleccionamos el deseado
-disk list
+list disk
 select disk 0
 #Oscar: Para ver las particiones
 list partition
