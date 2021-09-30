@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alumn@-aaa</title>
+<meta charset="UTF-8">
+<style>
+	h1 {color: blue; background-color: #d8e4f4}
+</style>
+</head>
+<body>
+	<h1 align="center">CENTROS EDUCATIVOS GVA</h1>
+	
+	<div><a href="http://edu-gva.es/ieselcaminas">Centro educativo IES elCaminas</a></div> 
+	
+	<div><a href="http://edu-gva.es/iesmiralcamp">Centro educativo IES miralCamp</a></div> 
+
+	<div><a href="http://edu-gva.es/iescamp">Centro educativo IES Camp</a></div> 
+
+	<div><a href="http://edu-gva.es/iesjaumei">Centro educativo IES JaumeI</a></div>
+
+<hr>
+<p>Esto tan sencillo es una página web, aunque le falta mucho contenido.....</p>
+</body>
+</html>
+
