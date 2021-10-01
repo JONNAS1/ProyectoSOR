@@ -11,6 +11,9 @@ New-NetIPAddress -InterfaceIndex 4 -IPaddress 192.168.1.202 -PrefixLength 24 -De
 #Le configuramos el DNS
 Set-DnsClientServerAddress -InterfaceIndex 4 -ServerAddresses 192.168.1.201, 192.168.1.202
 
+#Oscar: Quitar la IPv6
+Get-NetAdapterBinding -ComponentID ‘ms_tcpip6’ | Disable-NetAdapterBinding -ComponentID ‘ms_tcpip6’ -PassThru
+
 #Oscar: Para ver la version del NTFS
 fsutil fsinfo ntfsinfo C:\
 
